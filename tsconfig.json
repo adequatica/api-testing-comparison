@@ -1,0 +1,9 @@
+{
+  "include": ["**/*.ts"],
+  // Due to conflicts with Jest https://github.com/cypress-io/cypress/issues/22059
+  "exclude": ["node_modules", "cypress.config.ts", "cypress"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": true
+  }
+}
