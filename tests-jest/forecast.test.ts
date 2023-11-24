@@ -37,7 +37,7 @@ describe('Request 5 day weather forecast', () => {
 
     it('Should have valid content-type', async () => {
       expect(response.headers['content-type']).toBe(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
     });
 
@@ -77,7 +77,7 @@ describe('Request 5 day weather forecast', () => {
 
     it('Should have valid content-type', async () => {
       expect(response.headers['content-type']).toBe(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
     });
 

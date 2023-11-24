@@ -21,12 +21,12 @@ describe('Request One Call', () => {
 
       expect(response).to.have.property('headers');
       expect(response.headers['content-type']).to.equal(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
 
       expect(response.body.cod).to.equal(401);
       expect(response.body.message).to.have.string(
-        'Please note that using One Call 3.0 requires a separate subscription to the One Call by Call plan'
+        'Please note that using One Call 3.0 requires a separate subscription to the One Call by Call plan',
       );
     });
   });

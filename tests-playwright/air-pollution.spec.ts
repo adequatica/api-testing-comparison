@@ -28,7 +28,7 @@ test.describe('Request Air Pollution API', () => {
 
   test('Should have valid content-type', async () => {
     expect(response.headers()['content-type']).toBe(
-      'application/json; charset=utf-8'
+      'application/json; charset=utf-8',
     );
   });
 
@@ -39,7 +39,7 @@ test.describe('Request Air Pollution API', () => {
     expect(typeof body.list[0].dt).toBe('number');
     expect(body.list[0].main.aqi).toBeGreaterThanOrEqual(1);
     expect(Object.keys(body.list[0].components).length).toBeGreaterThanOrEqual(
-      1
+      1,
     );
 
     Object.keys(body.list[0].components).forEach((key) => {

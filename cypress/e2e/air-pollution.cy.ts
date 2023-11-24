@@ -19,7 +19,7 @@ describe('Request Air Pollution', () => {
 
       expect(response).to.have.property('headers');
       expect(response.headers['content-type']).to.equal(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
 
       expect(response.body.coord.lat).to.equal(QUERY.lat);
@@ -28,7 +28,7 @@ describe('Request Air Pollution', () => {
       expect(response.body.list[0].dt).to.be.a('number');
       expect(response.body.list[0].main.aqi).to.be.above(1);
       expect(
-        Object.keys(response.body.list[0].components)
+        Object.keys(response.body.list[0].components),
       ).to.have.lengthOf.above(1);
 
       Object.keys(response.body.list[0].components).forEach((key) => {

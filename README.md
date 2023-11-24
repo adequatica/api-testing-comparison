@@ -15,13 +15,14 @@ Example API for testing: [OpenWeatherMap API](https://openweathermap.org/api), w
 
 Read more in the article «[API Testing Comparison: Cypress vs. Playwright vs. Jest](https://adequatica.medium.com/api-testing-comparison-cypress-vs-playwright-vs-jest-2ff1f80c5a7b)».
 
-Methods of gatheing results for the article:
+Methods of gathering results for the article:
 
 - `time API_KEY={string} npm run cypress:run`
-- `time API_KEY={string} npm run test-playwright`
-- `time API_KEY={string} npm run test-jest`
+- `time API_KEY={string} npm run test:playwright`
+- `time API_KEY={string} npm run test:jest`
 
 Previous average results:
+
 - Cypress:run command time: 12,96 sec
 - Playwright command time: 3,21 sec
 - Jest command time: 3,84 sec

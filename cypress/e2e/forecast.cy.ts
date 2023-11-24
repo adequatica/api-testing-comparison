@@ -28,7 +28,7 @@ describe('Request 5 day weather forecast', () => {
 
       expect(response).to.have.property('headers');
       expect(response.headers['content-type']).to.equal(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
 
       expect(Number(response.body.cod)).to.equal(200);
@@ -59,7 +59,7 @@ describe('Request 5 day weather forecast', () => {
 
       expect(response).to.have.property('headers');
       expect(response.headers['content-type']).to.equal(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
 
       expect(Number(response.body.cod)).to.equal(200);

@@ -33,7 +33,7 @@ describe('Request One Call API 3.0', () => {
 
   it('Should have valid content-type', async () => {
     expect(response.headers['content-type']).toBe(
-      'application/json; charset=utf-8'
+      'application/json; charset=utf-8',
     );
   });
 
@@ -41,8 +41,8 @@ describe('Request One Call API 3.0', () => {
     expect(response.data.cod).toBe(401);
     expect(response.data.message).toEqual(
       expect.stringContaining(
-        'Please note that using One Call 3.0 requires a separate subscription to the One Call by Call plan'
-      )
+        'Please note that using One Call 3.0 requires a separate subscription to the One Call by Call plan',
+      ),
     );
   });
 });

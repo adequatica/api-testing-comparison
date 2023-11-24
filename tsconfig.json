@@ -4,6 +4,7 @@
   "exclude": ["node_modules", "cypress.config.ts", "cypress"],
   "compilerOptions": {
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true
   }
 }

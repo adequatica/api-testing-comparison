@@ -27,7 +27,7 @@ describe('Request Current weather data', () => {
 
   it('Should have valid content-type', async () => {
     expect(response.headers['content-type']).toBe(
-      'application/json; charset=utf-8'
+      'application/json; charset=utf-8',
     );
   });
 

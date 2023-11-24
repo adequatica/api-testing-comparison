@@ -38,7 +38,7 @@ test.describe('Request 5 day weather forecast', () => {
 
     test('Should have valid content-type', async () => {
       expect(response.headers()['content-type']).toBe(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
     });
 
@@ -80,7 +80,7 @@ test.describe('Request 5 day weather forecast', () => {
 
     test('Should have valid content-type', async () => {
       expect(response.headers()['content-type']).toBe(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
     });
 

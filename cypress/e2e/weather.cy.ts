@@ -19,15 +19,15 @@ describe('Request Current weather data', () => {
 
       expect(response).to.have.property('headers');
       expect(response.headers['content-type']).to.equal(
-        'application/json; charset=utf-8'
+        'application/json; charset=utf-8',
       );
 
       // Resonse coordinates are flacky for strict comparison
       expect(Math.round(response.body.coord.lat)).to.equal(
-        Math.round(QUERY.lat)
+        Math.round(QUERY.lat),
       );
       expect(Math.round(response.body.coord.lon)).to.equal(
-        Math.round(QUERY.lon)
+        Math.round(QUERY.lon),
       );
       expect(response.body.weather).to.have.lengthOf(1);
       expect(response.body.base).to.equal('stations');
