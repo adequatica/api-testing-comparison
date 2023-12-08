@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/adequatica/api-testing-comparison"
   },
-  "author": "Andrey Enin <enotramone@gmail.com>",
+  "author": "Andrey Enin",
   "license": "MIT",
   "engines": {
     "node": ">=18.0"
