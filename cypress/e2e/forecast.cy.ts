@@ -1,21 +1,19 @@
-import { CREDENTIALS } from '../../utils/env';
-
-const ENDPOINT = '/data/2.5/forecast';
-
-const QUERY = {
-  lat: 44.804,
-  lon: 20.4651,
-  cnt: 10,
-  appid: CREDENTIALS,
-};
-
-const QUERY_Q = {
-  q: 'Belgrade,RS',
-  cnt: 10,
-  appid: CREDENTIALS,
-};
-
 describe('Request 5 day weather forecast', () => {
+  const ENDPOINT = '/data/2.5/forecast';
+
+  const QUERY = {
+    lat: 44.804,
+    lon: 20.4651,
+    cnt: 10,
+    appid: Cypress.env('apiKey'),
+  };
+
+  const QUERY_Q = {
+    q: 'Belgrade,RS',
+    cnt: 10,
+    appid: Cypress.env('apiKey'),
+  };
+
   let cityFiels: any;
 
   it('Should have response by geographic coordinates', () => {

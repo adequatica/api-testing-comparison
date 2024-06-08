@@ -1,10 +1,13 @@
 import { defineConfig } from 'cypress';
 
-import { HOST } from './utils/env';
+import { CREDENTIALS, HOST } from './utils/env';
 
 export default defineConfig({
   e2e: {
     baseUrl: HOST,
+  },
+  env: {
+    apiKey: CREDENTIALS,
   },
   video: false,
 });

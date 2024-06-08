@@ -1,15 +1,13 @@
-import { CREDENTIALS } from '../../utils/env';
-
-const ENDPOINT = '/data/3.0/onecall';
-
-const QUERY = {
-  lat: 44.804,
-  lon: 20.4651,
-  exclude: 'alerts',
-  appid: CREDENTIALS,
-};
-
 describe('Request One Call', () => {
+  const ENDPOINT = '/data/3.0/onecall';
+
+  const QUERY = {
+    lat: 44.804,
+    lon: 20.4651,
+    exclude: 'alerts',
+    appid: Cypress.env('apiKey'),
+  };
+
   it('Should have response', () => {
     cy.request({
       method: 'GET',

@@ -21,7 +21,7 @@ Methods of gathering results for the article:
 - `time API_KEY={string} npm run test:playwright`
 - `time API_KEY={string} npm run test:jest`
 
-Previous average results:
+Resulting average results:
 
 - Cypress:run command time: 12,96 sec
 - Playwright command time: 3,21 sec

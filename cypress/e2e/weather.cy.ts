@@ -1,14 +1,12 @@
-import { CREDENTIALS } from '../../utils/env';
-
-const ENDPOINT = '/data/2.5/weather';
-
-const QUERY = {
-  lat: 44.804,
-  lon: 20.4651,
-  appid: CREDENTIALS,
-};
-
 describe('Request Current weather data', () => {
+  const ENDPOINT = '/data/2.5/weather';
+
+  const QUERY = {
+    lat: 44.804,
+    lon: 20.4651,
+    appid: Cypress.env('apiKey'),
+  };
+
   it('Should have response', () => {
     cy.request({
       method: 'GET',
