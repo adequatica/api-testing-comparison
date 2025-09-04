@@ -13,7 +13,7 @@ Example API for testing: [OpenWeatherMap API](https://openweathermap.org/api), w
 
 ---
 
-Read more in the article «[API Testing Comparison: Cypress vs. Playwright vs. Jest](https://adequatica.medium.com/api-testing-comparison-cypress-vs-playwright-vs-jest-2ff1f80c5a7b)».
+Read more in the article «[API Testing Comparison: Cypress vs. Playwright vs. Jest](https://adequatica.github.io/2023/07/02/api-testing-comparison-cypress-playwright-jest.html)».
 
 Methods of gathering results for the article:
 
