@@ -34,3 +34,7 @@ This result was valid at the time of the experiment with the following versions 
 - Cypress: 12.15.0
 - Playwright: 1.35.1
 - Jest: 29.5.0
+
+---
+
+The repository is archived due to the constant need for security updates to outdated dependencies. In order to understand the current speed of the test frameworks, new measurements must be taken.
