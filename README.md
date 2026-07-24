@@ -29,7 +29,7 @@ Resulting average results:
 
 This means that Сypress is four times slower than Playwright.
 
-These result was valid at the time of the experiment with the following versions of applications:
+This result was valid at the time of the experiment with the following versions of applications:
 
 - Cypress: 12.15.0
 - Playwright: 1.35.1
