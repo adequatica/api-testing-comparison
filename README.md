@@ -1,6 +1,6 @@
 # API Testing Comparison: Cypress vs. Playwright vs. Jest
 
-There is an implementation of a bunch of the same tests for each framework: [Cypress](https://www.cypress.io/), [Playwright](https://playwright.dev/), and [Jest](https://jestjs.io/) as a test runner + [Axios](https://axios-http.com/) as HTTP library.
+There is an implementation of a bunch of the same tests for each test framework: [Cypress](https://www.cypress.io/), [Playwright](https://playwright.dev/), and [Jest](https://jestjs.io/) as a test runner + [Axios](https://axios-http.com/) as HTTP library.
 
 Example API for testing: [OpenWeatherMap API](https://openweathermap.org/api), which requires a key for authorization (`API_KEY` env variable).
 
